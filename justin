@@ -1,137 +1,806 @@
-<!DOCTYPE html>
+!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Speaker Availability</title>
-    <link rel="stylesheet" href="spckr.css"> <!-- Link to external CSS -->
+    <title>Student Login</title>
+    <link rel="stylesheet" href="cs.css">
 </head>
 <body>
+    <div class="container">
+        <div class="login-box">
+            <h2>Student Login</h2>
+            <div class="logo-container">
+                <img src="https://cdn.prod.website-files.com/63a98d7ca37497b26e5ba22c/664c8bc69a596170390b444e_channels4_profile%20(1).jpg" 
+                     alt="University Logo">
+            </div>
+            
+            <form id="loginForm">
+                <div class="input-box">
+                    <input type="text" id="name" required placeholder="Enter the name">
+                </div>
+                <div class="input-box">
+                    <input type="text" id="rollno" required placeholder="Enter roll no">
+                </div>
+                <div class="input-box">
+                    <input type="text" id="branch" required placeholder="Enter branch">
+                </div>
+                <button type="submit" class="btn">Login</button>
+            </form>
+        </div>
+    </div>
 
-<div class="container">
-    <h2 style="color: wheat;">Speaker Availability</h2>
-
-    <!-- Speaker Selection -->
-    <label for="speakerSelect"></label>
-    <select id="speakerSelect">
-        <option value="" disabled selected></option>
-    </select>
-
-    <!-- Session Time Selection -->
-    <label for="sessionTime"></label>
-    <select id="sessionTime">
-        <option value="" disabled selected>Select Session Time</option>
-        <option value="9:00 AM - 10:00 AM">9:00 AM - 10:00 AM</option>
-        <option value="10:00 AM - 11:00 AM">10:00 AM - 11:00 AM</option>
-        <option value="10:30 AM - 11:30 AM">10:30 AM - 11:30 AM</option>
-        <option value="11:00 AM - 12:00 PM">11:00 AM - 12:00 PM</option>
-        <option value="1:00 PM - 2:00 PM">1:00 PM - 2:00 PM</option>
-        <option value="2:00 PM - 3:00 PM">2:00 PM - 3:00 PM</option>
-        <option value="2:30 PM - 3:30 PM">2:30 PM - 3:30 PM</option>
-        <option value="3:00 PM - 4:00 PM">3:00 PM - 4:00 PM</option>
-    </select>
-
-    <!-- Register Speaker Button -->
-    <button onclick="addSpeaker()">Register Speaker</button>
-
-    <!-- Speaker List -->
-    <ul class="speaker-list" id="speakerList"></ul>
-</div>
-
-<script src="reg.js"></script>  
+    <script>
+        document.getElementById("loginForm").addEventListener("submit", function(event) {
+            event.preventDefault(); // Prevent form from submitting normally
+            window.location.href = "speacker.html"; // Redirect after submitting
+        });
+    </script>
 </body>
 </html>
 
-
-
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Speaker Availability</title>
-    <link rel="stylesheet" href="spckr.css"> <!-- Link to external CSS -->
-</head>
-<body>
-
-<div class="container">
-    <h2 style="color: wheat;">Speaker Availability</h2>
-
-    <!-- Speaker Selection -->
-    <label for="speakerSelect"></label>
-    <select id="speakerSelect">
-        <option value="" disabled selected></option>
-    </select>
-
-    <!-- Session Time Selection -->
-    <label for="sessionTime"></label>
-    <select id="sessionTime">
-        <option value="" disabled selected>Select Session Time</option>
-        <option value="9:00 AM - 10:00 AM">9:00 AM - 10:00 AM</option>
-        <option value="10:00 AM - 11:00 AM">10:00 AM - 11:00 AM</option>
-        <option value="10:30 AM - 11:30 AM">10:30 AM - 11:30 AM</option>
-        <option value="11:00 AM - 12:00 PM">11:00 AM - 12:00 PM</option>
-        <option value="1:00 PM - 2:00 PM">1:00 PM - 2:00 PM</option>
-        <option value="2:00 PM - 3:00 PM">2:00 PM - 3:00 PM</option>
-        <option value="2:30 PM - 3:30 PM">2:30 PM - 3:30 PM</option>
-        <option value="3:00 PM - 4:00 PM">3:00 PM - 4:00 PM</option>
-    </select>
-
-    <!-- Register Speaker Button -->
-    <button onclick="addSpeaker()">Register Speaker</button>
-
-    <!-- Speaker List -->
-    <ul class="speaker-list" id="speakerList"></ul>
-</div>
-
-<script src="reg.js"></script>  
-</body>
-</html>
 
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Speaker Availability</title>
+    <title>Event Availability</title>
     <link rel="stylesheet" href="spckr.css"> <!-- Link to external CSS -->
 </head>
 <body>
 
-<div class="container">
-    <h2 style="color: wheat;">Speaker Availability</h2>
-
-    <!-- Speaker Selection -->
-    <label for="speakerSelect"></label>
-    <select id="speakerSelect">
-        <option value="" disabled selected></option>
-    </select>
-
-    <!-- Session Time Selection -->
-    <label for="sessionTime"></label>
-    <select id="sessionTime">
-        <option value="" disabled selected>Select Session Time</option>
-        <option value="9:00 AM - 10:00 AM">9:00 AM - 10:00 AM</option>
-        <option value="10:00 AM - 11:00 AM">10:00 AM - 11:00 AM</option>
-        <option value="10:30 AM - 11:30 AM">10:30 AM - 11:30 AM</option>
-        <option value="11:00 AM - 12:00 PM">11:00 AM - 12:00 PM</option>
-        <option value="1:00 PM - 2:00 PM">1:00 PM - 2:00 PM</option>
-        <option value="2:00 PM - 3:00 PM">2:00 PM - 3:00 PM</option>
-        <option value="2:30 PM - 3:30 PM">2:30 PM - 3:30 PM</option>
-        <option value="3:00 PM - 4:00 PM">3:00 PM - 4:00 PM</option>
-    </select>
-
-    <!-- Register Speaker Button -->
-    <button onclick="addSpeaker()">Register Speaker</button>
-
-    <!-- Speaker List -->
-    <ul class="speaker-list" id="speakerList"></ul>
+<!-- Logout Button in the Top Right Corner -->
+<div class="logout-container">
+    <button class="logout-btn" onclick="logout()">Logout</button>
 </div>
 
-<script src="reg.js"></script>  
+<div class="container">
+    <h2 style="color: aqua;">SCHEDULED EVENTS</h2>
+
+    <div class="event-list" id="eventList">
+        <!-- Event items will be populated here dynamically -->
+    </div>
+
+    <!-- Event Details Popup -->
+    <div id="eventDetails" class="event-details">
+        <button class="close-btn" onclick="closePopup()">✖</button>
+        <img id="eventImage" src="" alt="Speaker Image">
+        <h3 id="eventTitle"></h3>
+        <p id="eventSpeaker"></p>
+        <p id="availabilityStatus"></p>
+        <a id="meetingLink" href="https://zoom.us/j/your-meeting-id" target="_blank" class="join-link">Join Meeting</a>
+        <p id="meetingStatus"></p> <!-- Status message -->
+    </div>
+</div>
+
+<script>
+    function logout() {
+        window.location.href = "cnfrnceseats.html"; 
+    }
+
+    document.addEventListener("DOMContentLoaded", function () {
+        const meetingLink = document.getElementById("meetingLink");
+
+        if (meetingLink) {
+            meetingLink.addEventListener("click", function (event) {
+                event.preventDefault(); // Prevent default link behavior
+
+                const meetingURL = meetingLink.href;
+                let newTab = window.open(meetingURL, "_blank");
+                let redirectTimeout = null; // Store timeout reference
+
+                if (newTab) {
+                    document.getElementById("meetingStatus").innerHTML = 
+                        `Meeting is in progress... <br> <a href="${meetingURL}" target="_blank">Reopen Meeting</a>`;
+
+                    // Function to check if the meeting tab is closed
+                    function checkTabClosed() {
+                        if (newTab.closed) {
+                            document.getElementById("meetingStatus").innerHTML = 
+                                "Meeting has ended. Waiting for Zoom popups to close...";
+
+                            // Set a 3-second delay before redirecting
+                            redirectTimeout = setTimeout(() => {
+                                window.location.href = "feedback.html";
+                            }, 3000);
+                        } else {
+                            // If the tab is reopened (Undo), stop redirection
+                            clearTimeout(redirectTimeout);
+                        }
+                    }
+
+                    // Check tab status every second
+                    const intervalCheck = setInterval(function () {
+                        if (newTab.closed) {
+                            clearInterval(intervalCheck);
+                            checkTabClosed();
+                        }
+                    }, 1000);
+                } else {
+                    alert("Popup blocked! Please allow popups and try again.");
+                }
+            });
+        }
+    });
+</script>
+
+<script src="reg.js"></script>
+
 </body>
 </html>
+
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(rgba(3, 58, 117, 0.7), rgba(164, 6, 6, 0.7)), 
+                url('background.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    position: relative;
+    width: 420px;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+    text-align: center;
+    backdrop-filter: blur(8px);
+    overflow: hidden;
+    font-weight: 500;
+}
+
+
+.event-list {
+    margin: 20px 0;
+}
+
+.event-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 12px;
+    border-radius: 6px;
+    margin: 10px 0;
+    cursor: pointer;
+    transition: background 0.3s;
+    color: black;
+    font-weight: 500;
+}
+
+.event-item:hover {
+    background: rgba(255, 255, 255, 0.4);
+}
+
+.speaker-name {
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #eaeaea;
+    margin-bottom: 4px;
+}
+
+
+.event-name {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+
+.event-details {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 100%; 
+    transform: translate(-50%, -50%);
+    background: rgba(255, 255, 255, 0.9);
+    color: black;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    transition: left 0.5s ease-in-out;
+}
+
+
+.close-btn {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    background: transparent;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+
+#eventImage {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+
+.join-link {
+    display: none;
+    background: #0a4b78;
+    color: white;
+    padding: 8px 15px;
+    text-decoration: none;
+    border-radius: 6px;
+    margin-top: 10px;
+    display: inline-block;
+}
+
+.logout-container {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+}
+
+.logout-btn {
+    background: red;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.logout-btn:hover {
+    background: darkred;
+}
+
+const events = {
+    tedx: {
+        name: "TEDx Event",
+        speaker: "Dr. V. Vijaya Kumar",
+        designation: "Professor, Dean, Coordinator, Department Of CSE",
+        image: "okti.jpg",
+        virtualLink: "https://zoom.us/j/96649377397?pwd=KTn0qAm1ueNy792ZQTM4rfEf1n5ijr.1",
+        available: true
+    },
+    hackertronics: {
+        name: "Hacktronics Hackthon",
+        speaker: "Mrs. Meenakshi Simha",
+        designation: "Assistant Professor",
+        image: "moodu.jpg",
+        virtualLink: "https://teams.microsoft.com/l/meetup-join/123456789",
+        available: false
+    },
+    codecraft: {
+        name: "Code Craft Workshop",
+        speaker: "Dr. G. Vishnu Murthy",
+        designation: "Dean, CSE",
+        image: "rendu.jpg",
+        virtualLink: "https://zoom.us/j/96649377397?pwd=KTn0qAm1ueNy792ZQTM4rfEf1n5ijr.1",
+        available: true
+    },
+    opencv: {
+        name: "OpenCV Workshop",
+        speaker: "Mrs. S. Deepika",
+        designation: "Assistant Professor",
+        image: "nalugu.jpg",
+        virtualLink: "https://teams.microsoft.com/l/meetup-join/987654321",
+        available: false
+    }
+};
+
+window.onload = function () {
+    const eventList = document.getElementById("eventList");
+
+    for (const key in events) {
+        const event = events[key];
+        const eventItem = document.createElement("div");
+        eventItem.classList.add("event-item");
+        eventItem.innerHTML = `
+            <div class="speaker-name"><strong>${event.speaker}</strong></div>
+            <div class="event-name">${event.name}</div>
+        `;
+        eventItem.onclick = () => displayEventDetails(event);
+        eventList.appendChild(eventItem);
+    }
+};
+
+// Function to display event details in pop-up
+function displayEventDetails(event) {
+    document.getElementById("eventTitle").innerText = event.name;
+    document.getElementById("eventSpeaker").innerText = `Speaker: ${event.speaker} (${event.designation})`;
+    document.getElementById("eventImage").src = event.image;
+
+    if (event.available) {
+        document.getElementById("availabilityStatus").innerText = "Meeting is available!";
+        document.getElementById("meetingLink").href = event.virtualLink;
+        document.getElementById("meetingLink").style.display = "inline-block";
+    } else {
+        document.getElementById("availabilityStatus").innerText = "Meeting is not available.";
+        document.getElementById("meetingLink").style.display = "none";
+    }
+
+    // Show pop-up and move it to center
+    const popup = document.getElementById("eventDetails");
+    popup.style.left = "50%"; 
+    popup.style.display = "block";
+}
+
+// Function to close pop-up
+function closePopup() {
+    const popup = document.getElementById("eventDetails");
+    popup.style.left = "100%"; 
+    setTimeout(() => {
+        popup.style.display = "none";
+    }, 500); // Wait for animation to finish
+}
+document.addEventListener("DOMContentLoaded", function () {
+    const meetingLink = document.getElementById("meetingLink");
+
+    if (meetingLink) {
+        meetingLink.addEventListener("click", function (event) {
+            event.preventDefault(); // Prevent the default link behavior
+
+            const meetingURL = meetingLink.href;
+            const newTab = window.open(meetingURL, "_blank");
+
+            if (newTab) {
+                // Check every second if the meeting tab is closed
+                const checkTabClosed = setInterval(function () {
+                    if (newTab.closed) {
+                        clearInterval(checkTabClosed);
+                        window.open("feedback.html", "_blank"); // Open feedback form in new tab
+                    }
+                }, 1000); // Check every second
+            } else {
+                alert("Popup blocked! Please allow popups and try again.");
+            }
+        });
+    }
+});
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Feedback Form</title>
+    <link rel="stylesheet" href="fb.css">
+</head>
+<body>
+    <div class="container" id="formContainer">
+        <!-- Block Name Heading -->
+        <div class="block-heading">
+            <h2>📋 Student Feedback Form</h2>
+            <p>Your feedback helps us improve. Please fill out the form below.</p>
+        </div>
+
+        <form id="feedbackForm">
+            <!-- Student Name -->
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+
+            <!-- Email -->
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+            <!-- Course -->
+            <label for="course">Course Name</label>
+            <input type="text" id="course" name="course" placeholder="Enter course name" required>
+
+            <!-- Instructor Name -->
+            <label for="instructor">Instructor Name</label>
+            <input type="text" id="instructor" name="instructor" placeholder="Enter instructor's name" required>
+
+            <!-- Feedback -->
+            <label for="feedback">Feedback</label>
+            <textarea id="feedback" name="feedback" rows="4" placeholder="Write your feedback here..." required></textarea>
+
+            <!-- Overall Experience -->
+            <label for="experience">Overall Experience</label>
+            <select id="experience" name="experience" required>
+                <option value="" disabled selected>Select an option</option>
+                <option value="Excellent">Excellent</option>
+                <option value="Good">Good</option>
+                <option value="Average">Average</option>
+                <option value="Poor">Poor</option>
+            </select>
+
+            <!-- Suggestions -->
+            <label for="suggestions">Suggestions for Improvement (Optional)</label>
+            <textarea id="suggestions" name="suggestions" rows="3" placeholder="Any additional suggestions..."></textarea>
+
+            <!-- Submit Button Block -->
+            <div class="submit-block">
+                <button type="submit">Submit Feedback</button>
+            </div>
+        </form>
+    </div>
+
+    <!-- Success Message -->
+    <div class="container success-message" id="successMessage" style="display: none;">
+        <h2>🎉 Thank You, <span id="userName"></span>!</h2>
+        <p>Your feedback has been received successfully.</p>
+        <blockquote id="quote"></blockquote>
+        <button onclick="resetForm()">Submit Another Response</button>
+    </div>
+
+    <script>
+        document.getElementById("feedbackForm").addEventListener("submit", function(event) {
+            event.preventDefault(); // Prevents page reload
+
+            // Get user name
+            let userName = document.getElementById("name").value;
+            document.getElementById("userName").innerText = userName;
+
+            // Motivational quotes array
+            const quotes = [
+                "The best way to predict the future is to create it. - Peter Drucker",
+                "Education is the most powerful weapon which you can use to change the world. - Nelson Mandela",
+                "Believe in yourself and all that you are. Know that there is something inside you that is greater than any obstacle. - Christian D. Larson",
+                "Success is not the key to happiness. Happiness is the key to success. - Albert Schweitzer",
+                "Your only limit is your mind. Keep pushing forward!"
+            ];
+
+            // Pick a random quote
+            let randomQuote = quotes[Math.floor(Math.random() * quotes.length)];
+            document.getElementById("quote").innerText = randomQuote;
+
+            // Hide form and show success message
+            document.getElementById("formContainer").style.display = "none";
+            document.getElementById("successMessage").style.display = "block";
+        });
+
+        function resetForm() {
+            document.getElementById("feedbackForm").reset(); // Reset form fields
+            document.getElementById("successMessage").style.display = "none";
+            document.getElementById("formContainer").style.display = "block";
+        }
+    </script>
+</body>
+</html>
+
+fb.css
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden; 
+}
+
+.container {
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+    width: 420px;
+    text-align: left;
+    animation: fadeIn 0.8s ease-in-out;
+    position: fixed; 
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-height: 90vh; 
+    overflow-y: auto; 
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+.block-heading {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.block-heading h2 {
+    color: #6a11cb;
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+
+.block-heading p {
+    font-size: 14px;
+    color: #444;
+}
+
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+label {
+    font-weight: 600;
+    color: #2575fc;
+}
+
+input, textarea, select {
+    width: 100%;
+    padding: 12px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    box-shadow: inset 0px 2px 5px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+}
+
+input:focus, textarea:focus, select:focus {
+    outline: none;
+    border-color: #6a11cb;
+    box-shadow: 0px 0px 8px rgba(106, 17, 203, 0.3);
+}
+
+
+.submit-block {
+    text-align: center;
+    margin-top: 20px;
+}
+
+button {
+    width: 100%;
+    background: linear-gradient(135deg, #ff7eb3, #ff758c);
+    color: white;
+    padding: 14px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+    display: block;
+}
+
+button:hover {
+    background: linear-gradient(135deg, #ff4e80, #ff2d55);
+    transform: scale(1.05);
+}
+
+
+@media (max-width: 480px) {
+    .container {
+        width: 90%;
+        padding: 20px;
+    }
+}
+
+
+cs.js
+const rows = ["A", "B", "C", "D", "E"];
+const cols = 5; // 5 seats per row
+const seatContainer = document.getElementById("seatContainer");
+const participantCount = document.getElementById("participantCount");
+const loginSection = document.getElementById("loginSection");
+const bookingSection = document.getElementById("bookingSection");
+const loggedInUser = document.getElementById("loggedInUser");
+const studentNameInput = document.getElementById("studentName");
+
+// Check for saved bookings in local storage
+let bookedSeats = JSON.parse(localStorage.getItem("bookedSeats")) || {};
+
+// Login Function
+function login() {
+    const studentName = studentNameInput.value.trim();
+    if (!studentName) {
+        alert("Please enter your name.");
+        return;
+    }
+
+    localStorage.setItem("loggedInUser", studentName);
+    loggedInUser.textContent = studentName;
+    loginSection.style.display = "none";
+    bookingSection.style.display = "block";
+    generateSeats();
+}
+
+// Logout Function
+function logout() {
+    localStorage.removeItem("loggedInUser");
+    location.reload();
+}
+
+// Generate Seat Grid
+function generateSeats() {
+    seatContainer.innerHTML = ""; // Clear existing seats
+
+    rows.forEach(row => {
+        for (let i = 1; i <= cols; i++) {
+            let seatNumber = `${row}${i}`; // Example: A1, B2, C3
+            let seat = document.createElement("div");
+            seat.classList.add("seat");
+            seat.innerHTML = `<i class="fas fa-chair"></i><br>${seatNumber}`;
+
+            // Set seat status
+            if (bookedSeats[seatNumber]) {
+                seat.classList.add("booked");
+            } else {
+                seat.classList.add("available");
+
+                // Click event to book a seat
+                seat.addEventListener("click", function () {
+                    let user = localStorage.getItem("loggedInUser");
+                    if (!user) {
+                        alert("Please log in first!");
+                        return;
+                    }
+
+                    // Mark seat as booked
+                    bookedSeats[seatNumber] = user;
+                    localStorage.setItem("bookedSeats", JSON.stringify(bookedSeats));
+                    generateSeats(); // Refresh seat layout
+                });
+            }
+
+            seatContainer.appendChild(seat);
+        }
+    });
+
+    // Update booked seats count
+    updateParticipantCount();
+}
+
+// Update Participant Count
+function updateParticipantCount() {
+    let bookedCount = Object.keys(bookedSeats).length;
+    participantCount.textContent = bookedCount;
+}
+
+// Check for logged-in user
+window.onload = function () {
+    let user = localStorage.getItem("loggedInUser");
+
+    if (user) {
+        loggedInUser.textContent = user;
+        loginSection.style.display = "none";
+        bookingSection.style.display = "block";
+    }
+
+    generateSeats();
+};
+
+
+cs.css
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #1e3c72, #1e84a4);
+}
+
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.login-box {
+    background: white;
+    padding: 2.5rem;
+    width: 400px;
+    border-radius: 12px;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.25);
+    text-align: center;
+}
+
+
+h2 {
+    margin-bottom: 20px;
+    color: #1e3c72;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+
+.logo-container {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+.logo-container img {
+    width: 70px;
+    height: 70px;
+    object-fit: contain;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+.input-box {
+    margin-bottom: 18px;
+}
+
+.input-box input {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #ccc;
+    border-radius: 6px;
+    font-size: 17px;
+    outline: none;
+    transition: 0.3s;
+    background: #f8f8f8;
+    color: #333;
+}
+
+.input-box input:focus {
+    border-color: #2a5298;
+    background: #eef7f9;
+}
+
+
+.btn {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    background: #2a5298;
+    color: white;
+    font-size: 17px;
+    cursor: pointer;
+    transition: 0.3s;
+    font-weight: 600;
+}
+
+.btn:hover {
+    background: #1e3c72;
+}
+
+
+@media (max-width: 480px) {
+    .login-box {
+        width: 90%;
+    }
+    
+    .logo-container img {
+        width: 50px;
+        height: 50px;
+    }
+}
 
 
 
