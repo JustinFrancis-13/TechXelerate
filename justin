@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Speaker Availability</title>
+    <link rel="stylesheet" href="spckr.css"> <!-- Link to external CSS -->
+</head>
+<body>
+
+<div class="container">
+    <h2 style="color: wheat;">Speaker Availability</h2>
+
+    <!-- Speaker Selection -->
+    <label for="speakerSelect"></label>
+    <select id="speakerSelect">
+        <option value="" disabled selected></option>
+    </select>
+
+    <!-- Session Time Selection -->
+    <label for="sessionTime"></label>
+    <select id="sessionTime">
+        <option value="" disabled selected>Select Session Time</option>
+        <option value="9:00 AM - 10:00 AM">9:00 AM - 10:00 AM</option>
+        <option value="10:00 AM - 11:00 AM">10:00 AM - 11:00 AM</option>
+        <option value="10:30 AM - 11:30 AM">10:30 AM - 11:30 AM</option>
+        <option value="11:00 AM - 12:00 PM">11:00 AM - 12:00 PM</option>
+        <option value="1:00 PM - 2:00 PM">1:00 PM - 2:00 PM</option>
+        <option value="2:00 PM - 3:00 PM">2:00 PM - 3:00 PM</option>
+        <option value="2:30 PM - 3:30 PM">2:30 PM - 3:30 PM</option>
+        <option value="3:00 PM - 4:00 PM">3:00 PM - 4:00 PM</option>
+    </select>
+
+    <!-- Register Speaker Button -->
+    <button onclick="addSpeaker()">Register Speaker</button>
+
+    <!-- Speaker List -->
+    <ul class="speaker-list" id="speakerList"></ul>
+</div>
+
+<script src="reg.js"></script>  
+</body>
+</html>
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Speaker Availability</title>
+    <link rel="stylesheet" href="spckr.css"> <!-- Link to external CSS -->
+</head>
+<body>
+
+<div class="container">
+    <h2 style="color: wheat;">Speaker Availability</h2>
+
+    <!-- Speaker Selection -->
+    <label for="speakerSelect"></label>
+    <select id="speakerSelect">
+        <option value="" disabled selected></option>
+    </select>
+
+    <!-- Session Time Selection -->
+    <label for="sessionTime"></label>
+    <select id="sessionTime">
+        <option value="" disabled selected>Select Session Time</option>
+        <option value="9:00 AM - 10:00 AM">9:00 AM - 10:00 AM</option>
+        <option value="10:00 AM - 11:00 AM">10:00 AM - 11:00 AM</option>
+        <option value="10:30 AM - 11:30 AM">10:30 AM - 11:30 AM</option>
+        <option value="11:00 AM - 12:00 PM">11:00 AM - 12:00 PM</option>
+        <option value="1:00 PM - 2:00 PM">1:00 PM - 2:00 PM</option>
+        <option value="2:00 PM - 3:00 PM">2:00 PM - 3:00 PM</option>
+        <option value="2:30 PM - 3:30 PM">2:30 PM - 3:30 PM</option>
+        <option value="3:00 PM - 4:00 PM">3:00 PM - 4:00 PM</option>
+    </select>
+
+    <!-- Register Speaker Button -->
+    <button onclick="addSpeaker()">Register Speaker</button>
+
+    <!-- Speaker List -->
+    <ul class="speaker-list" id="speakerList"></ul>
+</div>
+
+<script src="reg.js"></script>  
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Speaker Availability</title>
+    <link rel="stylesheet" href="spckr.css"> <!-- Link to external CSS -->
+</head>
+<body>
+
+<div class="container">
+    <h2 style="color: wheat;">Speaker Availability</h2>
+
+    <!-- Speaker Selection -->
+    <label for="speakerSelect"></label>
+    <select id="speakerSelect">
+        <option value="" disabled selected></option>
+    </select>
+
+    <!-- Session Time Selection -->
+    <label for="sessionTime"></label>
+    <select id="sessionTime">
+        <option value="" disabled selected>Select Session Time</option>
+        <option value="9:00 AM - 10:00 AM">9:00 AM - 10:00 AM</option>
+        <option value="10:00 AM - 11:00 AM">10:00 AM - 11:00 AM</option>
+        <option value="10:30 AM - 11:30 AM">10:30 AM - 11:30 AM</option>
+        <option value="11:00 AM - 12:00 PM">11:00 AM - 12:00 PM</option>
+        <option value="1:00 PM - 2:00 PM">1:00 PM - 2:00 PM</option>
+        <option value="2:00 PM - 3:00 PM">2:00 PM - 3:00 PM</option>
+        <option value="2:30 PM - 3:30 PM">2:30 PM - 3:30 PM</option>
+        <option value="3:00 PM - 4:00 PM">3:00 PM - 4:00 PM</option>
+    </select>
+
+    <!-- Register Speaker Button -->
+    <button onclick="addSpeaker()">Register Speaker</button>
+
+    <!-- Speaker List -->
+    <ul class="speaker-list" id="speakerList"></ul>
+</div>
+
+<script src="reg.js"></script>  
+</body>
+</html>
+
+
+
+
+
+
+
